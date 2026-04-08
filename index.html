@@ -1,7 +1,7 @@
 <!--
-  OpenSource 2026 SilentStore
-  Code by AKShadowXff
-  SilentStore
+  OpenSource 2025 AeroX
+  Code by itsfizys
+  AeroX Development
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -11,8 +11,8 @@
     <meta http-equiv="Pragma" content="no-cache"/>
     <meta http-equiv="Expires" content="0"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kali Billi — Your Cute Discord Companion</title>
-    <meta name="description" content="Kali Billi Bot - Fun, moderation, and AI chat for your Discord server.">
+    <title>SilentCore — Your Premium Discord Manager</title>
+    <meta name="description" content="SilentCore Bot - Advanced security, automation, and fun features for your Discord server.">
     <!-- Fonts: Nunito (Rounded & Friendly) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -467,10 +467,10 @@ Get started today and transform your Discord server into a secure, engaging hub!
             font-size: 0.9rem;
             color: var(--text-light);
         }
-        /* --- 🎮 MINI GAME (Feed Kali Billi) --- */
+        /* --- 🎬 Preview Gallery --- */
         .game-section {
             background: #fff;
-            max-width: 800px;
+            max-width: 900px;
             margin: 80px auto;
             border-radius: 30px;
             padding: 30px;
@@ -556,6 +556,39 @@ Get started today and transform your Discord server into a secure, engaging hub!
             border-radius: 50px;
             display: inline-block;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .preview-card {
+            background: #f8fbff;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 179, 193, 0.35);
+            box-shadow: var(--shadow-soft);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .preview-card img,
+        .preview-card video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .preview-card video {
+            min-height: 220px;
+            background: black;
+        }
+        .preview-label {
+            padding: 16px;
+            font-weight: 700;
+            color: var(--text-dark);
+            background: white;
+            text-align: center;
         }
         /* --- 💌 FEEDBACK MODAL --- */
         .feedback-modal-overlay {
@@ -1288,9 +1321,9 @@ Get started today and transform your Discord server into a secure, engaging hub!
     <div id="loading-screen">
         <div class="loading-container">
             <div class="loading-image">
-                <img src="assets/images/kali-billi-icon.webp" alt="Kali Billi Loading">
+                <img src="assets/images/silentcore-icon.webp" alt="SilentCore Loading">
             </div>
-            <div class="loading-text">Kali Billi</div>
+            <div class="loading-text">SilentCore</div>
             <div class="loading-dots">.</div>
             <div class="loading-progress">
                 <div class="loading-progress-bar"></div>
@@ -1309,7 +1342,7 @@ Get started today and transform your Discord server into a secure, engaging hub!
             </button>
             <div class="feedback-modal-icon">💌</div>
             <h2>Send us <span style="color: #FF9EBC;">Feedback</span></h2>
-            <p>We'd love to hear what you think about Kali Billi!</p>
+            <p>We'd love to hear what you think about SilentCore!</p>
             <form id="feedbackFormModal">
                 <div class="form-group">
                     <label for="discordUsernameModal"><i class="fas fa-user"></i> Discord Username</label>
@@ -1343,14 +1376,14 @@ Get started today and transform your Discord server into a secure, engaging hub!
     <nav class="navbar">
         <a href="#" class="logo">
             <div class="logo-image">
-                <img src="assets/images/kali-billi-icon.webp" alt="Kali Billi">
+                <img src="assets/images/silentcore-icon.webp" alt="SilentCore">
             </div>
-            <span>Kali Billi</span>
+            <span>SilentCore</span>
         </a>
         <div class="nav-links">
             <a href="#features">Features</a>
             <a href="#commands">Commands</a>
-            <a href="#" id="nav-demo-btn">Demo</a>
+            <a href="#preview" id="nav-demo-btn">Preview</a>
         </div>
         <div class="nav-actions">
             <button id="feedback-btn" class="btn btn-icon-only btn-secondary" aria-label="Feedback"
@@ -1367,21 +1400,20 @@ Get started today and transform your Discord server into a secure, engaging hub!
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Kali Billi — Our awesome<br><span>Discord Companion</span></h1>
-            <p>Cute, comfy, and always online. The perfect mix of memes, AI chat, moderation, and giveaways for your
-                community.</p>
+            <h1>SilentCore — Your premium<br><span>Discord Command Center</span></h1>
+            <p>Powerful antinuke, automod, AI, and server management tools for secure, modern community control.</p>
             <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: inherit;">
                 <a href="#" id="hero-invite-btn" class="btn btn-primary" onclick="confettiEffect(event)">
-                    <i class="fas fa-star"></i> Invite Kali Billi
+                    <i class="fas fa-star"></i> Invite SilentCore
                 </a>
                 <a href="#" id="hero-support-btn" class="btn btn-secondary">
                     <i class="fab fa-discord"></i> Join Support
                 </a>
             </div>
             <div class="hero-badges">
-                <div class="badge-item"><i class="fas fa-clock"></i> 24/7 Uptime</div>
-                <div class="badge-item"><i class="fas fa-users"></i> User Friendly</div>
-                <div class="badge-item"><i class="fas fa-wand-magic-sparkles"></i> Fun Commands</div>
+                <div class="badge-item"><i class="fas fa-shield"></i> Antinuke</div>
+                <div class="badge-item"><i class="fas fa-robot"></i> AI Powered</div>
+                <div class="badge-item"><i class="fas fa-filter"></i> Automod</div>
             </div>
         </div>
         <div class="hero-visuals">
@@ -1400,14 +1432,14 @@ Get started today and transform your Discord server into a secure, engaging hub!
             <!-- Image 1 -->
             <div class="hero-card one">
                 <div class="card-img-placeholder">
-                    <img src="assets/images/demo-1.jpg" alt="Cute Art"
+                    <img src="assets/images/demo-1.jpg" alt="SilentCore Demo Image 1"
                         style="width:100%; height:100%; object-fit:cover;">
                 </div>
             </div>
             <!-- Image 2 -->
             <div class="hero-card two">
                 <div class="card-img-placeholder">
-                    <img src="assets/images/demo-2.jpg" alt="Cute Art"
+                    <img src="assets/images/demo-2.jpg" alt="SilentCore Demo Image 2"
                         style="width:100%; height:100%; object-fit:cover;">
                 </div>
             </div>
@@ -1482,32 +1514,31 @@ Get started today and transform your Discord server into a secure, engaging hub!
             </div>
         </div>
     </section>
-    <!-- 🎮 Interactive Game: Feed Kali Billi -->
-    <section id="game-section" class="game-section">
+    <!-- Preview Gallery -->
+    <section id="preview" class="game-section">
         <div class="section-title" style="margin-bottom: 1rem;">
-            <h2>Feed <span style="color: #FF9EBC;">Kali Billi</span></h2>
-            <p>Catch the treats (🐟 & 🥛), avoid the water (💧)!</p>
+            <h2>Preview <span style="color: #FF9EBC;">SilentCore</span></h2>
+            <p>This preview area is ready for demo images and videos. Replace the placeholders with your SilentCore media assets.</p>
         </div>
-        <div class="score-board">Score: <span id="game-score">0</span></div>
-        <div id="game-area" class="game-area">
-            <!-- Start Overlay -->
-            <div id="game-start-overlay" class="game-overlay">
-                <h3>Hungry Kitty?</h3>
-                <p>Move your mouse to catch treats!</p>
-                <button class="btn btn-primary" onclick="startGame()">Start Game</button>
+        <div class="preview-grid">
+            <div class="preview-card">
+                <img src="assets/images/demo-1.jpg" alt="SilentCore Demo Image 1">
+                <div class="preview-label">Screenshot 1</div>
             </div>
-            <!-- Game Over Overlay -->
-            <div id="game-over-overlay" class="game-overlay" style="display: none;">
-                <h3>Full Tummy! 😺</h3>
-                <p>Final Score: <span id="final-score">0</span></p>
-                <button class="btn btn-primary" onclick="startGame()">Play Again</button>
+            <div class="preview-card">
+                <img src="assets/images/demo-2.jpg" alt="SilentCore Demo Image 2">
+                <div class="preview-label">Screenshot 2</div>
             </div>
-            <!-- Player -->
-            <div id="player-cat" class="player-cat">
-                <img src="assets/images/kali-billi-icon.webp" alt="Kali Billi"
-                    style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+            <div class="preview-card preview-video">
+                <video controls poster="assets/images/demo-1.jpg">
+                    <source src="assets/videos/demo-1.mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+                <div class="preview-label">Demo Video</div>
             </div>
         </div>
+        <div id="game-area" class="game-area" style="display:none;"></div>
+        <div id="player-cat" class="player-cat" style="display:none;"></div>
     </section>
     <!-- Commands Section -->
     <section id="commands" class="commands-section">
@@ -1715,16 +1746,15 @@ Get started today and transform your Discord server into a secure, engaging hub!
                 </div>
             </div>
             <div class="footer-content">
-                <div class="footer-logo">Kali Billi <i class="fas fa-cat" style="color:#ffb3d1"></i></div>
-                <p style="margin-bottom: 20px; color: var(--text-light);">Made with <span
-                        style="color: #ff4757;">💢</span> and lots of treats.</p>
+                <div class="footer-logo">SilentCore <i class="fas fa-shield-alt" style="color:#ffb3d1"></i></div>
+                <p style="margin-bottom: 20px; color: var(--text-light);">Built for secure servers, modern automation, and next-level community engagement.</p>
                 <div class="social-links">
                     <a href="#" id="foot-invite" aria-label="Discord Invite"><i class="fas fa-star"></i></a>
                     <a href="#" id="foot-support" aria-label="Support Server"><i class="fab fa-discord"></i></a>
                     <a href="#" id="foot-github" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
                 <div class="copyright">
-                    &copy; 2025 Kali Billi Bot. All rights reserved.
+                    &copy; 2026 SilentCore Bot. All rights reserved.
                 </div>
             </div>
     </footer>
@@ -1764,11 +1794,43 @@ Get started today and transform your Discord server into a secure, engaging hub!
             const supportUrl = CONFIG.supportServerUrl || CONFIG.supportLink;
             const githubUrl = CONFIG.githubLink || 'https://github.com/AeroXDevs';
 
-            document.querySelectorAll('#nav-invite-btn, #hero-invite-btn, #foot-invite').forEach(el => el.href = inviteUrl);
-            document.querySelectorAll('#hero-support-btn, #foot-support').forEach(el => el.href = supportUrl);
-            document.querySelectorAll('#foot-github').forEach(el => el.href = githubUrl);
-            document.getElementById('nav-demo-btn').href = supportUrl;
-            document.getElementById('nav-demo-btn').target = '_blank';
+            document.querySelectorAll('#nav-invite-btn, #hero-invite-btn, #foot-invite').forEach(el => {
+                el.href = inviteUrl;
+                el.target = '_blank';
+                el.rel = 'noopener noreferrer';
+            });
+            document.querySelectorAll('#hero-support-btn, #foot-support').forEach(el => {
+                el.href = supportUrl;
+                el.target = '_blank';
+                el.rel = 'noopener noreferrer';
+            });
+            document.querySelectorAll('#foot-github').forEach(el => {
+                el.href = githubUrl;
+                el.target = '_blank';
+                el.rel = 'noopener noreferrer';
+            });
+            const previewBtn = document.getElementById('nav-demo-btn');
+            if (previewBtn) {
+                previewBtn.href = '#preview';
+                previewBtn.target = '_self';
+            }
+            const previewGrid = document.querySelector('.preview-grid');
+            if (previewGrid && typeof CONFIG !== 'undefined') {
+                previewGrid.innerHTML = '';
+                const images = CONFIG.previewImages || [];
+                images.forEach((src, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'preview-card';
+                    card.innerHTML = `<img src="${src}" alt="SilentCore Demo Image ${index + 1}"><div class="preview-label">Screenshot ${index + 1}</div>`;
+                    previewGrid.appendChild(card);
+                });
+                if (CONFIG.previewVideo) {
+                    const videoCard = document.createElement('div');
+                    videoCard.className = 'preview-card preview-video';
+                    videoCard.innerHTML = `<video controls poster="${images[0] || ''}"><source src="${CONFIG.previewVideo}" type="video/mp4">Your browser does not support video playback.</video><div class="preview-label">Demo Video</div>`;
+                    previewGrid.appendChild(videoCard);
+                }
+            }
             // Render Commands
             for (const [category, cmds] of Object.entries(commands)) {
                 const grid = document.getElementById(`grid-${category}`);
@@ -2189,3 +2251,4 @@ Get started today and transform your Discord server into a secure, engaging hub!
     </script>
 </body>
 </html>
+
