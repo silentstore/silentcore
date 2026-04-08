@@ -18,7 +18,17 @@ const CONFIG = {
   botName: "SilentCore",
   
   // Bot description
-  botDescription: "Your All In On Bot."
+  botDescription: "Elevate your Discord server with Silentcore, the ultimate premium multipurpose Discord bot powered by cutting-edge Component V2 architecture. Featuring 99 specialized cogs and 79 synchronized commands, Silentcore delivers unparalleled performance, security, and user experience.
+
+Key Features:
+Advanced Antinuke Protection: Shield your server from malicious actions including channel/role creation/deletion, kicks, bans, and more.
+Powerful Automod System: Maintain a safe community with intelligent filters for caps, links, invites, spam, and mass mentions.
+Comprehensive Moderation Tools: Access a full suite of commands for banning, kicking, warning, muting, and role management.
+Utility & Entertainment: Enjoy feature-rich utilities like avatar displays, user info, member counts, plus engaging fun commands and games.
+Seamless Auto-Setup: Automatic database generation and configuration for instant deployment.
+Built with Python 3.11+ and Discord.py 2.0+, Silentcore offers modern, interactive UI components for a premium experience. Protect, moderate, and entertain your community with the most advanced Discord bot available.
+
+Get started today and transform your Discord server into a secure, engaging hub!"
 };
 
 // Export for use in browsers
